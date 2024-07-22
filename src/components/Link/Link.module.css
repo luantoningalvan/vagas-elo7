@@ -1,0 +1,18 @@
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: #008b90;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.link:hover {
+  gap: 0.75rem;
+}
+
+.link svg {
+  height: 1rem;
+  width: 1rem;
+}
