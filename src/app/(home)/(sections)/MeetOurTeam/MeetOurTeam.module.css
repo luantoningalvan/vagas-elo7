@@ -1,0 +1,16 @@
+.meetOurTeamSection {
+  padding: 5rem 0;
+}
+
+.meetOurTeamSection h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.teamMembersGrid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+}
