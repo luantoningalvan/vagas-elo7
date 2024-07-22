@@ -1,0 +1,33 @@
+.sellerQuoteSection {
+  background-color: #f4f5f7;
+  padding: 5rem 0;
+  margin-top: 4rem;
+}
+
+.sellerQuoteSection > div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.sellerQuoteSection h3 {
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.sellerQuoteSection span {
+  color: #d99f2c;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.sellerQuoteSection q {
+  color: #57575c;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-top: 1.5rem;
+  display: block;
+}
