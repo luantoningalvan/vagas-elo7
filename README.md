@@ -1,10 +1,8 @@
-# Desafio de Programação Elo7
+## Comentários sobre o projeto
 
-Como parte do processo seletivo do Elo7, gostaríamos que você fizesse uma pequena tarefa. Conforme seu resultado convidamos você para uma sessão de pair-programming. A ideia é simples: desenvolver uma landing page. Forneceremos algumas informações via API e deixamos em exposição nossas vagas em aberto.
-
-O objetivo desse desafio é avaliar como você desenvolve código em termos de estilo, eficiência e qualidade.
-
-Crie um repositório no seu Github com a resolução da tarefa descrita abaixo e veremos a sua progressão por meio dos commits.
+- Em uma situação real provavelmente existiria uma página sobre detalhes da vaga para o candidato poder entender melhor e se candidatar, essa página poderia utilizar os [dados estruturados de pesquisa do google](https://developers.google.com/search/docs/appearance/structured-data/job-posting), descrevendo a vaga e assim aparecendo diretamente nos resultados de pesquisa de um jeito especial.
+- Apesar do BFF ter sido feito em Nest, uma outra solução seria utilizar a funcionalidade de API do Next que possibilita criar funções serverless e disponibilizá-las através de um endpoint.
+- Uma boa opção para estilização nesse caso seria utilizar o Tailwind, ele funciona bem nas situações onde se tem SSR, afinal de contas as classes são geradas em tempo de build, diferente de outras soluções CSS-IN-JS como styled-componentes ou stitches. A escolha por utilizar o CSS modules foi por o Next já suportar nativamente eles e para poder mostrar de forma mais prática meu conhecimento em CSS "puro".
 
 ## O que deverá ser feito:
 
