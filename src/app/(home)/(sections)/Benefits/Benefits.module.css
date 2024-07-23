@@ -1,12 +1,12 @@
 .benefitsSection {
   background-color: #fff3db;
-  padding: 5rem 0;
+  padding: 2.5rem 0;
 }
 
 .benefitsSection > div {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2.5rem;
 }
 
 .benefit {
@@ -39,4 +39,15 @@
   align-items: center;
   color: #fff;
   font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .benefitsSection {
+    padding: 5rem 0;
+  }
+
+  .benefitsSection > div {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
 }

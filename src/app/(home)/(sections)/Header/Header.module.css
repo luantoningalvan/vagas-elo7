@@ -13,8 +13,8 @@
   width: 100%;
   padding: 1rem 0;
   background: url("/hero-bg.png") no-repeat center center/cover;
-  height: 500px;
-  font-size: 3rem;
+  height: 360px;
+  font-size: 1.4rem;
   color: #fff;
 }
 
@@ -34,4 +34,11 @@
   background-color: #c8c8cc;
   width: 100%;
   margin: 1.5rem 0;
+}
+
+@media (min-width: 768px) {
+  .headerBg {
+    height: 500px;
+    font-size: 3rem;
+  }
 }

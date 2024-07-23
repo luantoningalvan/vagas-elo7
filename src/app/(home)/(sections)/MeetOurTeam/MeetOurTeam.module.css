@@ -1,7 +1,12 @@
 .meetOurTeamSection {
-  padding: 5rem 0;
+  padding: 2.5rem 0;
 }
 
+.meetOurTeamSection img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
 .meetOurTeamSection h3 {
   text-align: center;
   font-size: 2rem;
@@ -12,5 +17,21 @@
 .teamMembersGrid {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .meetOurTeamSection {
+    padding: 5rem 0;
+  }
+
+  .teamMembersGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .teamMembersGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
