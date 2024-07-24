@@ -3,13 +3,13 @@
 import styles from "./JobListing.module.css";
 import { SearchIcon } from "@/components/icons/searchIcon";
 import { Container } from "@/components";
-import { useJobListeningController } from "./JobListening.controller";
+import { useJobJobListingController } from "./JobListing.controller";
 import { Pagination } from "@/components/Pagination/Pagination.view";
 import { JOBS_PER_PAGE } from "@/common/constant/pagination";
 
 export function JobListingSection() {
   const { handleSearch, handleChangePage, jobs, filters } =
-    useJobListeningController();
+    useJobJobListingController();
 
   return (
     <section className={styles.jobsSections} id="vagas">

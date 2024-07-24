@@ -7,7 +7,7 @@ interface JobsData {
   count: number;
 }
 
-export function useJobListeningController() {
+export function useJobJobListingController() {
   const [jobs, setJobs] = React.useState<JobsData>({
     rows: [],
     count: 0,
