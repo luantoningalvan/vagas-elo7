@@ -17,7 +17,7 @@ export function Pagination(props: PaginationProps) {
 
   return (
     <nav>
-      <ul className={styles.pagination}>
+      <ul className={styles.pagination} data-testid="pages-list">
         {pages.map((pageNumber) => (
           <li
             key={pageNumber}

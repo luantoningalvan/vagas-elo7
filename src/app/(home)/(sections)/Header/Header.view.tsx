@@ -6,7 +6,7 @@ export function HeaderSection() {
   return (
     <header className={styles.header}>
       <div className={styles.headerBg}>
-        <h2>trabalhe na elo7</h2>
+        <h2 role="heading">trabalhe na elo7</h2>
       </div>
 
       <Container>
