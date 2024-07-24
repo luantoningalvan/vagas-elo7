@@ -17,6 +17,7 @@ const customJestConfig = {
     "!src/**/*.{test,spec}.{js,jsx,ts,tsx}",
     "!src/index.ts",
   ],
+  coverageDirectory: "jest-coverage",
 };
 
 module.exports = createJestConfig(customJestConfig);
