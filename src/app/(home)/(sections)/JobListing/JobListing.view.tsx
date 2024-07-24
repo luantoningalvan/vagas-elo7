@@ -12,7 +12,7 @@ export function JobListingSection() {
     useJobListeningController();
 
   return (
-    <section className={styles.jobsSections}>
+    <section className={styles.jobsSections} id="vagas">
       <div className={styles.jobsBanner}></div>
 
       <Container>
