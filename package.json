@@ -7,8 +7,8 @@
     "test": "jest --watch",
     "test:cov": "jest --coverage",
     "test:ci": "jest --ci",
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
   },
   "dependencies": {
     "@cypress/code-coverage": "^3.12.44",
