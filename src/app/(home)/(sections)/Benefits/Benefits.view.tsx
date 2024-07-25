@@ -10,7 +10,7 @@ export function BenefitsSection() {
         <div className={styles.benefit}>
           <div className={styles.benefitIcon}>
             <Image
-              src="/image-icon.png"
+              src="/image-icon.webp"
               alt="Ícone de joinha"
               width={136}
               height={136}
@@ -28,7 +28,7 @@ export function BenefitsSection() {
         <div className={styles.benefit}>
           <div className={styles.benefitIcon}>
             <Image
-              src="/thumbs-up-icon.png"
+              src="/thumbs-up-icon.webp"
               alt="Ícone de joinha"
               width={136}
               height={136}
@@ -46,7 +46,7 @@ export function BenefitsSection() {
         <div className={styles.benefit}>
           <div className={styles.benefitIcon}>
             <Image
-              src="/vault-icon.png"
+              src="/vault-icon.webp"
               alt="Ícone de joinha"
               width={136}
               height={136}

@@ -8,7 +8,7 @@ export function SellerQuoteSection() {
     <section className={styles.sellerQuoteSection}>
       <Container>
         <Image
-          src="/seller-quote.png"
+          src="/seller-quote.webp"
           alt="Mulher trabalhando com artesanato sob uma mesa"
           width={644}
           height={264}

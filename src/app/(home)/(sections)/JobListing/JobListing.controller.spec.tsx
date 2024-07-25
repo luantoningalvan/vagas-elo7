@@ -1,6 +1,10 @@
 import { act, renderHook, waitFor } from "@testing-library/react";
 import { useJobJobListingController } from "./JobListing.controller";
-import { getJobsSuccess, resetMocks } from "../../../../common/mocks/requests";
+import {
+  getJobsError,
+  getJobsSuccess,
+  resetMocks,
+} from "../../../../common/mocks/requests";
 
 describe("useJobJobListingController", () => {
   afterEach(() => {
@@ -15,7 +19,7 @@ describe("useJobJobListingController", () => {
     expect(result.current).toHaveProperty("jobs");
 
     await waitFor(() => {
-      expect(result.current.jobs.count).toBe(2);
+      expect(result.current.jobs.count).toBe(7);
     });
   });
 
@@ -43,7 +47,7 @@ describe("useJobJobListingController", () => {
     expect(result.current.filters.page).toBe(1);
 
     await waitFor(() => {
-      expect(result.current.jobs.count).toBe(2);
+      expect(result.current.jobs.count).toBe(7);
     });
   });
 
@@ -61,7 +65,19 @@ describe("useJobJobListingController", () => {
     expect(result.current.filters.page).toBe(2);
 
     await waitFor(() => {
-      expect(result.current.jobs.count).toBe(2);
+      expect(result.current.jobs.count).toBe(7);
+    });
+  });
+
+  it("should be display an error", async () => {
+    getJobsError();
+
+    const { result } = renderHook(() => useJobJobListingController());
+
+    expect(result.current).toHaveProperty("jobs");
+
+    await waitFor(() => {
+      expect(result.current.error).toBe("Request failed with status code 500");
     });
   });
 });
