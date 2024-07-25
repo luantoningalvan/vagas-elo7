@@ -32,6 +32,7 @@ export function JobListingSection() {
                 placeholder="Pesquisar vagas"
                 inputMode="search"
                 name="search"
+                data-testid="search-input"
               />
               <SearchIcon />
             </div>

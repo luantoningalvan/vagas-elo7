@@ -8,6 +8,32 @@ export const GET_JOBS_RESPONSE_MOCK = {
       title: "Backend Developer",
       location: "São Paulo",
     },
+    {
+      title: "Fullstack Developer",
+      location: "São Paulo",
+    },
+    {
+      title: "DevOps Engineer",
+      location: "São Paulo",
+    },
+    {
+      title: "QA Engineer",
+      location: "São Paulo",
+    },
   ],
-  count: 2,
+  count: 7,
+};
+
+export const GET_JOBS_RESPONSE_MOCK_PG2 = {
+  rows: [
+    {
+      title: "Product Manager",
+      location: "São Paulo",
+    },
+    {
+      title: "UX Designer",
+      location: "São Paulo",
+    },
+  ],
+  count: 7,
 };
