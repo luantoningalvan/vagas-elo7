@@ -18,15 +18,27 @@ export function useJobJobListingController() {
     search: "",
   });
 
-  const handleFetchJobs = React.useCallback(async () => {
-    const response = await api.get("/jobs", {
-      params: {
-        page: filters.page,
-        search: filters.search,
-      },
-    });
+  const [loading, setLoading] = React.useState(false);
+  const [error, setError] = React.useState("");
 
-    setJobs(response.data);
+  const handleFetchJobs = React.useCallback(async () => {
+    try {
+      setLoading(true);
+
+      const response = await api.get("/jobs", {
+        params: {
+          page: filters.page,
+          ...(filters.search && { search: filters.search }),
+        },
+      });
+
+      setError("");
+      setJobs(response.data);
+    } catch (error) {
+      setError((error as Error)?.message);
+    } finally {
+      setLoading(false);
+    }
   }, [filters.page, filters.search]);
 
   const handleSearch = React.useCallback(
@@ -56,8 +68,11 @@ export function useJobJobListingController() {
 
   return {
     jobs,
+    handleFetchJobs,
     handleSearch,
     handleChangePage,
     filters,
+    loading,
+    error,
   };
 }
